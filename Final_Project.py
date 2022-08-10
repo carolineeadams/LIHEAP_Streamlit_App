@@ -32,7 +32,7 @@ st.write("This app retrieves publicly available data from the 2019 American Comm
 @st.cache
 def get_liheap_dta():
     #load in liheap data
-    liheap=pd.read_csv("/Users/carolineadams/Documents/Georgetown/S22/DS2/PPOL565_Final_Project/LIHEAP State Level Data.csv")
+    liheap=pd.read_csv("/Users/carolineadams/Documents/Georgetown/S22/DS2/PPOL565_Final_Project/PPOL565_FinalProject/LIHEAP State Level Data.csv")
     #create dictionary for state names and abbreviations
     code = {'Alabama': 'AL',
         'Alaska': 'AK',
@@ -291,7 +291,7 @@ def get_geo_dta():
     #merge census_df_lmtd onto shapefile
     geo_dta = df.merge(census_df_lmtd2,on='STATEFP')
     #load in deaths due to extreme heat data
-    heat_deaths = pd.read_csv('/Users/carolineadams/Documents/Georgetown/S22/DS2/PPOL565_Final_Project/Extreme Heat Mortality CDC.csv', dtype={'STATEFP': object})
+    heat_deaths = pd.read_csv('/Users/carolineadams/Documents/Georgetown/S22/DS2/PPOL565_Final_Project/PPOL565_FinalProject/Extreme Heat Mortality CDC.csv', dtype={'STATEFP': object})
     #merge heat_death data with other geo_dta
     geo_dta = geo_dta.merge(heat_deaths, on='STATEFP')
     #renaming FIPS code column to match geo_data columns
