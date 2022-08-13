@@ -94,7 +94,7 @@ def get_liheap_dta():
 liheap=get_liheap_dta()
 
 #add subheader
-st.subheader("State-Level LIHEAP Household Data")
+st.subheader("State-Level LIHEAP Household Data (Source: LIHEAP Data Warehouse)")
 
 #create list of variables in liheap dataset to visualize
 variable_list1=["Assisted Households - Any Vulnerable Member - Cooling", "Assisted Households - With Member 60 or Over - Cooling", "Assisted Households - Member with a Disability - Cooling", "Assisted Households - Child 5 and Under - Cooling", "Assisted Households - Below 150% Poverty - Cooling", "Percent of Total Assistance Funds Allocated to Cooling Assistance"]
@@ -309,7 +309,7 @@ def get_geo_dta():
 us51=get_geo_dta()
 
 #add subheader
-st.subheader("Total Deaths from Extreme Heat Exposure (1999 through 2016)")
+st.subheader("Total Deaths from Extreme Heat Exposure (1999 through 2016; Source: CDC)")
 
 #plotting total deaths from extreme heat by state
 fig = px.choropleth(us51,locations='State', color='Deaths',
@@ -325,7 +325,7 @@ fig = px.choropleth(us51,locations='State', color='Deaths',
 st.plotly_chart(fig)
 
 #add subheader
-st.subheader("Distribution of Proportions of Selected Vulnerable Community Present Across all States in the U.S.")
+st.subheader("Distribution of Proportions of Selected Vulnerable Community Present Across all States in the U.S. (Source: American Community Survey 5-Year Estimates, 2019)")
 
 #define function to plot histograms of nationwide distribution of vulnerable population
 @st.cache(allow_output_mutation=True)
@@ -339,7 +339,7 @@ def plot_hist(var):
 st.pyplot(plot_hist(variable_selected2))
 
 #add subheader
-st.subheader("Comparing Proportions of Selected Vulnerable Community Present in Each State")
+st.subheader("Comparing Proportions of Selected Vulnerable Community Present in Each State (Source: American Community Survey 5-Year Estimates, 2019)")
 
 #defining function to generate altair_chart
 @st.cache(allow_output_mutation=True)
@@ -353,7 +353,7 @@ def alt_chart(var):
 st.altair_chart(alt_chart(variable_selected2))
 
 #plotting other variables by state
-st.subheader("Variation in Proportion of Selected Vulnerable Community Across the United States")
+st.subheader("Variation in Proportion of Selected Vulnerable Community Across the United States (Source: American Community Survey 5-Year Estimates, 2019)")
 
 #defining function to plot variables by state
 @st.cache(allow_output_mutation=True)
