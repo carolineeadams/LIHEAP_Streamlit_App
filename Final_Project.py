@@ -94,7 +94,7 @@ def get_liheap_dta():
 liheap=get_liheap_dta()
 
 #add subheader
-st.subheader("State-Level LIHEAP Household Data (Source: LIHEAP Data Warehouse)")
+st.subheader("State-Level LIHEAP Household Data (Source: LIHEAP Data Warehouse, 2020)")
 
 #create list of variables in liheap dataset to visualize
 variable_list1=["Assisted Households - Any Vulnerable Member - Cooling", "Assisted Households - With Member 60 or Over - Cooling", "Assisted Households - Member with a Disability - Cooling", "Assisted Households - Child 5 and Under - Cooling", "Assisted Households - Below 150% Poverty - Cooling", "Percent of Total Assistance Funds Allocated to Cooling Assistance"]
