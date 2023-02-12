@@ -1,4 +1,4 @@
-# Mapping Communities Placed at Risk of the Negative Effects of Extreme Heat
+# Mapping Communities Placed at Highest Risk of Experiencing the Negative Effects of Extreme Heat
 
 This project used Streamlit, a Python package that allows users to create an interactive web app, to create a web app focused on the Low Income Home Energy Assistance Program (LIHEAP), which is operated by the U.S. federal government. The Low Income Home Energy Assistance Program (LIHEAP) has been administered by the Department of Health and Human Services (HHS) since 1981 to provide low-income households with financial assistance to cover energy bills (heating, cooling) and weatherization of their homes. LIHEAP is a program highlighted under the Biden Administration’s Justice40 Initiative, which pledges to allocate 40 percent of federal investments in climate-tangential areas to communities historically overburdened by pollution and the negative effects of climate change.
 
